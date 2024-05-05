@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section1 {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.8vw;
+}
+
+nav .left i {
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 2.5vw;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.8vw;
+    font-weight: 200;
+}
+
+nav .right button {
+    padding: 1vw;
+    border-radius: 12px;
+    font-weight: 600;
+    word-spacing: .8vw;
+    background-color: rgba(255, 255, 255, 0.866);
+}
+
+.main {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    padding: 2vw 3vw;
+}
+
+.main .left {
+    height: 100%;
+    width: 40%;
+}
+
+.main .left h1 {
+    font-size: 5vw;
+}
+
+.main .left p {
+    margin: 3vw 0 2.5vw 0;
+    font-size: 2vw;
+}
+
+.main .left button {
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #fff;
+    background-color: #111;
+    border-radius: 12px;
+}
+
+.main .right {
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.main .right img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.section2 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section2 .logos {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.section2 .logos .logo {
+    width: 10%;
+    height: 8vh;
+}
+
+.logos .logo img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.section2 .services {
+    width: 70%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 4vw;
+    margin-top: 3vw;
+}
+
+.section2 .service {
+    border: none;
+    background-color: #B9FD5F;
+    font-size: 2.8vw;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+}
+
+.services p{
+    font-size: 1.5vw;
+}
+
+.section2 .cards {
+    margin-top: 5vw;
+    width: 100%;
+    height:100vh;
+    padding: 2vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.cards .card {
+    width: 48%;
+    height: 40vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    border: 3px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 10px 8px black;
+    transition: ease-in-out;
+}
+
+.card .left{
+    position: relative;
+    width: 50%;
+}
+
+.card .left h2 {
+    width: fit-content;
+    background-color: #BCFC61;
+    border-radius: 5px;
+    padding: 0 .5vw;
+}
+
+.card .left .bottom {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.left .bottom .icon {
+    font-size: 2.7vw;
+    background-color: #111;
+    border-radius: 50%;
+    color: #9AE975;
+    rotate: 15deg;
+}
+
+.left .bottom .text {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.card .right {
+    height: 100%;
+}
+
+.card .right img {
+    height: 100%;
+}
+
+.black {
+    background-color: #000;
+}
+
+.black .left h2 {
+    background-color: #fff;
+}
+
+.black .left .bottom .icon {
+    background-color: #fff;
+    color: #000;
+}
+
+.section3 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section3 .upper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper .container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F3F3F3;
+    border-radius: 25px;
+}
+
+.upper .container .left {
+    width: 40%;
+    height: 85%;
+}
+
+.upper .container .left p {
+    margin: 1.8vw 0;
+    font-size: 1.5vw;
+}
+
+.upper .container .left button {
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #fff;
+    background-color: #111;
+    border-radius: 12px;
+}
+
+.upper .container .right {
+    width: 40%;
+    height: 85%;
+    text-align: end;
+}
+
+.upper .container .right img {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.section3 .lower {
+    width: 100%;
+    height: 50%;
+}
+
+.section3 .lower .top {
+    margin-top: 5vw;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 6vw;
+}
+
+.lower .top .left {
+    background-color: #B9FD5F;
+    padding: .3vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    font-weight: 600;
+}
+
+.lower .top .right {
+    width: 40%;
+}
+
+
+.section3 .lower .bottom {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower .bottom .container {
+    width: 90%;
+    height: 80%;
+    background-color: #1F1F1F;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 2vw;
+}
+
+.lower .bottom .container .text {
+    border-left: 1.5px solid #fff;
+    padding: 1vw 3vw;
+}
+
+.lower .bottom .container .first {
+    border: none;
+}
+
+.lower .bottom .container .text p {
+    font-size: 1.5vw;
+}
+
+.lower .bottom .container .text .icon {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 1vw;
+    font-size: 1.6vw;
+    margin-top: 2vw;
+}
+
+.lower .bottom .container .text .icon h4 {
+    color: #B9FD5F;
+    font-weight: 300;
+}
+
+.lower .bottom .container .text .icon i {
+    font-size: 2.5vw;
+    rotate: 10deg;
+}
